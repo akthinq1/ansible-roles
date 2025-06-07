@@ -6,8 +6,8 @@
 - name: install mongodb
   ansible.builtin.dnf:
     name: mongodb
-    state: installed
-
+    state: present
+    
 - name: start service
   ansible.builtin.service:
     name: mongod
